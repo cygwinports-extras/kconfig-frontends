@@ -1,0 +1,12 @@
+NAME="kconfig-frontends"
+VERSION=3.6.0-0
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Stand-alone Kconfig infrastructure"
+DESCRIPTION="This is an up-to-date, stand-alone, packaging of the configuration
+language used by the Linux kernel, known as kconfig, ready for use by third
+party projects."
+HOMEPAGE="http://ymorin.is-a-geek.org/projects/kconfig-frontends"
+SRC_URI="http://ymorin.is-a-geek.org/download/${NAME}/${NAME}-${VERSION}.tar.xz"
+
+KEEP_LA_FILES="none"
