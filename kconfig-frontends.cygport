@@ -1,5 +1,5 @@
 NAME="kconfig-frontends"
-VERSION=3.6.0-0
+VERSION=3.9.0.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Stand-alone Kconfig infrastructure"
