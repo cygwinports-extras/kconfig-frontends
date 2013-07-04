@@ -1,5 +1,5 @@
 NAME="kconfig-frontends"
-VERSION=3.9.0.0
+VERSION=3.10.0.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Stand-alone Kconfig infrastructure"
@@ -8,5 +8,12 @@ language used by the Linux kernel, known as kconfig, ready for use by third
 party projects."
 HOMEPAGE="http://ymorin.is-a-geek.org/projects/kconfig-frontends"
 SRC_URI="http://ymorin.is-a-geek.org/download/${NAME}/${NAME}-${VERSION}.tar.xz"
+
+PKG_NAMES="${NAME} ${NAME}-gtk ${NAME}-qt"
+kconfig_frontends_CONTENTS="--exclude=*[gq]conf* usr/"
+kconfig_frontends_gtk_SUMMARY="${SUMMARY} (GTK+ interface)"
+kconfig_frontends_gtk_CONTENTS="usr/bin/kconfig-gconf.exe usr/share/${NAME}/gconf.*"
+kconfig_frontends_qt_SUMMARY="${SUMMARY} (Qt interface)"
+kconfig_frontends_qt_CONTENTS="usr/bin/kconfig-qconf.exe"
 
 KEEP_LA_FILES="none"
